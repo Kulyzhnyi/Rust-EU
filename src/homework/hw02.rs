@@ -1,4 +1,4 @@
-// Задача з Hackerrank: Solve me first
+// Задача з HackerRank: Solve me first
 use std::io;
 
 fn main() {
