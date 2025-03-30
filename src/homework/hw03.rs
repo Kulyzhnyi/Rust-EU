@@ -10,10 +10,10 @@ fn main() {
             let is_ver = x == 0 || x == W - 1;
 
             // побудова діагоналей
-            let is_first_diag = (x as f32 - k * y as f32).abs() < 0.5; // перша діагональ
-            let is_second_diag = ((W - 1 - x) as f32 - k * y as f32).abs() < 0.5; // друга діагональ
+            let is_fir_diag = (x as f32 - k * y as f32).abs() < 0.5; // перша діагональ
+            let is_sec_diag = ((W - 1 - x) as f32 - k * y as f32).abs() < 0.5; // друга діагональ
 
-            let sym = if is_hor || is_ver || is_first_diag || is_second_diag { '*' } else { ' ' };
+            let sym = if is_hor || is_ver || is_fir_diag || is_sec_diag { '*' } else { ' ' };
             print!("{sym}");
         }
         println!();
